@@ -2,7 +2,6 @@ import os
 from openai import OpenAI
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-# client = OpenAI("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")
 def main():
     system_prompt = "You are a helpful assistant."
     user_input = input("Enter your prompt: ")
